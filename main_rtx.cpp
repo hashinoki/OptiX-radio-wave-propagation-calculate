@@ -65,7 +65,10 @@ int main(int argc, char **argv) {
   
   cudaStreamSynchronize(stream);
   Timer timer1;
-  
+	
+  ///////////////////////////////////////////////////////////////////////////////
+	//example of description
+  ///////////////////////////////////////////////////////////////////////////////
   rtx_dataholder = new RTXDataHolder();
   std::cout << "Initializing Context \n";
   rtx_dataholder->initContext();
@@ -77,7 +80,8 @@ int main(int argc, char **argv) {
   rtx_dataholder->linkPipeline();
   std::cout << "Building Shader Binding Table (SBT) \n";
   rtx_dataholder->buildSBT();
-
+  //////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
   cudaStreamSynchronize(stream);
   timer1.stop();
   cudaStreamSynchronize(stream);
