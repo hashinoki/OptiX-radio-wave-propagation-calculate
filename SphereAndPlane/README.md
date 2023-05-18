@@ -1,0 +1,1 @@
+Accel_Triange is an implementation of collision detection for triangles with OptiX and collision detection for spheres without OptiX. On the other hand, Accel_SphereAndTriangle implements collision detection for both triangles and spheres using OptiX.
